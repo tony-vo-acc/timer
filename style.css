@@ -1,114 +1,116 @@
 html {
-   background: rgb(225, 225, 225);
-   color: rgb(100, 100, 100);
+	background: rgb(225, 225, 225);
+	color: rgb(100, 100, 100);
 }
 
-@media screen and (orientation: portrait) {
-   * {
-      margin: 0;
-      padding: 0;
-   }
+@media screen and (max-width: 600px) and (orientation: portrait) {
+	* {
+		margin: 0;
+		padding: 0;
+	}
 
-   #container {
-      display: none;
-   }
+	#container {
+		display: none;
+	}
 
-   #block {
-      position: absolute;
-      background: rgb(0, 0, 0);
-      margin: 0;
-      height: 100%;
-      width: 100%;
+	#block {
+		position: absolute;
+		background: rgb(0, 0, 0);
+		margin: 0;
+		height: 100%;
+		width: 100%;
 
-      color: white;
-      display: flex;
-      font-family: "Lato", sans-serif;
-      font-weight: 400;
-      justify-content: center;
-      align-items: center;
-   }
+		color: white;
+		display: flex;
+		font-family: "Lato", sans-serif;
+		font-weight: 400;
+		font-size: 1.25em;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
-@media screen (orientation: landscape) {
-   #block {
-      display: none;
-   }
+@media screen and (min-width: 600px) and (orientation: landscape) {
+	#block {
+		display: none;
+	}
 
-   #container {
-      /* The magic centering code */
-      margin: auto;
-      position: absolute;
-      top: 1em;
-      bottom: 0;
-      /* Aligns Vertically - Remove for Horizontal Only */
-      left: 0;
-      right: 0;
-      /* Aligns Horizontally - Remove for Vertical Only  */
+	#container {
+		/* The magic centering code */
+		margin: auto;
+		position: absolute;
+		top: 1.1em;
+		bottom: 0;
+		/* Aligns Vertically - Remove for Horizontal Only */
+		left: 0;
+		right: 0;
+		/* Aligns Horizontally - Remove for Vertical Only  */
 
-      /* Prevent div from overflowing main window */
-      max-width: 100%;
-      max-height: 100%;
-      overflow: auto;
-   }
+		/* Prevent div from overflowing main window */
+		max-width: 100%;
+		max-height: 100%;
+		overflow: auto;
+	}
 
-   h2 {
-      text-transform: uppercase;
-      text-align: center;
-      letter-spacing: .25rem;
-      font-family: "Lato", sans-serif;
-      font-weight: 400;
-      font-size: .75rem;
-   }
+	h2 {
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: .25rem;
+		font-family: "Lato", sans-serif;
+		font-weight: 400;
+		font-size: .75rem;
+	}
 
-   h1 {
-      text-transform: uppercase;
-      text-align: center;
-      margin-top: -.35em;
-      font-family: "Oswald", sans-serif;
-      font-weight: 500;
-   }
+	h1 {
+		text-transform: uppercase;
+		text-align: center;
+		margin-top: -.35em;
+		font-family: "Oswald", sans-serif;
+		font-weight: 500;
+	}
 
 
-   #title {
-      text-transform: uppercase;
-      letter-spacing: .125rem;
-      text-align: center;
-   }
+	#title {
+		text-transform: uppercase;
+		letter-spacing: .125rem;
+		text-align: center;
+	}
 
-   ul {
-      margin-top: -.5em;
-      padding: 0;
-      text-align: center;
-      font-family: "Ms Madi", cursive;
-      font-weight: 300;
-   }
+	ul {
+		margin-top: -.5em;
+		padding: 0;
+		text-align: center;
+		font-family: "Ms Madi", cursive;
+		font-weight: 300;
+	}
 
-   li {
-      display: inline-block;
-      list-style-type: none;
-      padding: 1em;
-      padding-top: 0em;
-      font-size: 1.15rem;
-   }
+	li {
+		display: inline-block;
+		list-style-type: none;
+		padding: 1em;
+		padding-top: 0em;
+		font-size: 1.15rem;
+	}
 
-   li span {
-      display: block;
-      font-size: 3.5rem;
-      margin-bottom: -.25em;
-   }
+	li span {
+		display: block;
+		font-size: 3.5rem;
+		margin-bottom: -.25em;
+	}
 
-   #name {
-      font-size: 1.75rem;
-   }
+	#name {
+		font-size: 1.75rem;
+	}
 
-   p {
-      width: 30em;
-      margin: auto;
-      margin-top: -1.15em;
+	p {
+		width: 30em;
+		margin: auto;
+		margin-top: -1.15em;
 
-      font-family: "Lato", sans-serif;
-      font-weight: 400;
-      text-align: center;
-      font-size: .9rem;
-   }
+		font-family: "Lato", sans-serif;
+		font-weight: 400;
+		text-align: center;
+		font-size: .9rem;
+	}
 }
