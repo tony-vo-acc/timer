@@ -18,7 +18,7 @@ body {
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
 	display: flex;
-	font-size: 1.35rem;
+	font-size: 125%;
 	align-items: center;
 	justify-content: center;
 	z-index: 500;
