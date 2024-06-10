@@ -3,7 +3,7 @@ html {
    color: rgb(100, 100, 100);
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (orientation: portrait) {
    * {
       margin: 0;
       padding: 0;
@@ -25,7 +25,7 @@ html {
    }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (orientation: landscape) {
    #block {
       display: none;
    }
