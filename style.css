@@ -3,37 +3,32 @@ html {
 	color: rgb(100, 100, 100);
 }
 
-@media screen and (max-aspect-ratio: 9/19.5) or (max-aspect-ratio: 9/16) {
+#block {
+	position: absolute;
+	background: rgb(0, 0, 0);
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	color: white;
+	display: flex;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 1.25em;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-aspect-ratio: 9/19.5) or (max-aspect-ratio: 9/16) or (orientation: portrait) {
 	* {
 		margin: 0;
 		padding: 0;
 	}
-
-	#container {
-		display: none;
-	}
-
-	#block {
-		position: absolute;
-		background: rgb(0, 0, 0);
-		margin: 0;
-		height: 100%;
-		width: 100%;
-
-		color: white;
-		display: flex;
-		font-family: "Lato", sans-serif;
-		font-weight: 400;
-		font-size: 1.25em;
-		text-align: center;
-		justify-content: center;
-		align-items: center;
-	}
 }
 
-@media screen and (min-aspect-ratio: 16/9) or (min-aspect-ratio: 19.5/9) {
+@media screen and (min-aspect-ratio: 16/9) or (min-aspect-ratio: 19.5/9) or (orientation: landscape) {
 	#block {
-		display: none;
+		/* modify properties here as needed */
 	}
 
 	#container {
@@ -60,7 +55,6 @@ html {
 		font-family: "Oswald", sans-serif;
 		font-weight: 500;
 	}
-
 
 	#title {
 		text-transform: uppercase;
@@ -98,7 +92,6 @@ html {
 		width: 30em;
 		margin: auto;
 		margin-top: -1.15em;
-
 		font-family: "Lato", sans-serif;
 		font-weight: 400;
 		text-align: center;
