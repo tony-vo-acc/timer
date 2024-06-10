@@ -3,98 +3,72 @@ html {
 	color: rgb(100, 100, 100);
 }
 
-#block {
-	position: absolute;
-	background: rgb(0, 0, 0);
-	margin: 0;
-	height: 100%;
+
+#container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 100%;
-	color: white;
-	display: flex;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .25rem;
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
-	font-size: 1.25em;
+	font-size: .75rem;
+}
+
+h1 {
+	text-transform: uppercase;
 	text-align: center;
-	justify-content: center;
-	align-items: center;
+	margin-top: -.35em;
+	font-family: "Oswald", sans-serif;
+	font-weight: 500;
 }
 
-@media screen and (max-aspect-ratio: 9/19.5) or (max-aspect-ratio: 9/16) or (orientation: portrait) {
-	* {
-		margin: 0;
-		padding: 0;
-	}
+
+#title {
+	text-transform: uppercase;
+	letter-spacing: .125rem;
+	text-align: center;
 }
 
-@media screen and (min-aspect-ratio: 16/9) or (min-aspect-ratio: 19.5/9) or (orientation: landscape) {
-	#block {
-		display: none;
-	}
+ul {
+	margin-top: -.5em;
+	padding: 0;
+	text-align: center;
+	font-family: "Ms Madi", cursive;
+	font-weight: 300;
+}
 
-	#container {
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 100%;
-	}
+li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 1em;
+	padding-top: 0em;
+	font-size: 1.15rem;
+}
 
-	h2 {
-		text-transform: uppercase;
-		text-align: center;
-		letter-spacing: .25rem;
-		font-family: "Lato", sans-serif;
-		font-weight: 400;
-		font-size: .75rem;
-	}
+li span {
+	display: block;
+	font-size: 3.5rem;
+	margin-bottom: -.25em;
+}
 
-	h1 {
-		text-transform: uppercase;
-		text-align: center;
-		margin-top: -.35em;
-		font-family: "Oswald", sans-serif;
-		font-weight: 500;
-	}
+#name {
+	font-size: 1.75rem;
+}
 
-	#title {
-		text-transform: uppercase;
-		letter-spacing: .125rem;
-		text-align: center;
-	}
+p {
+	width: 30em;
+	margin: auto;
+	margin-top: -1.15em;
 
-	ul {
-		margin-top: -.5em;
-		padding: 0;
-		text-align: center;
-		font-family: "Ms Madi", cursive;
-		font-weight: 300;
-	}
-
-	li {
-		display: inline-block;
-		list-style-type: none;
-		padding: 1em;
-		padding-top: 0em;
-		font-size: 1.15rem;
-	}
-
-	li span {
-		display: block;
-		font-size: 3.5rem;
-		margin-bottom: -.25em;
-	}
-
-	#name {
-		font-size: 1.75rem;
-	}
-
-	p {
-		width: 30em;
-		margin: auto;
-		margin-top: -1.15em;
-		font-family: "Lato", sans-serif;
-		font-weight: 400;
-		text-align: center;
-		font-size: .9rem;
-	}
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	text-align: center;
+	font-size: .9rem;
 }
